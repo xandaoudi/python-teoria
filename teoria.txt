@@ -1,0 +1,160 @@
+*** Aula 04 - (Primeiros Comandos em Python) ****
+
+Na linguagem python se os dados forem mensagem, ou seja, STRINGS, elas possuem delimitadores.
+Para utilizar a string deve-se utilizar 'string a ser escrita'. Pode utilizar '' ou "".
+
+No Python 3.0 todos os comandos são funções, e por isso todos os comandos tem ().
+
+Para escrever na tela utilza-se o comando print:
+    Exemplo: print('Olá Mundo!')
+
+Os números inteiros ou float não precisam estar em aspas
+    Exemplo: print(10)
+
+Obs: No python para concatenar strings pode utilizar o operador + ou a vírgula(,).
+Obs1: Para comentar código no script deve-se utilizar ''' código comentado '''
+    Exemplo:
+    '''
+    print('Olá Mundo!')
+    '''
+* Variáveis *
+O nome das variáveis deve ser em letras minúsculas.
+No caso do python toda variável é um objeto
+No python = significa recebe.
+
+Exemplo:
+nome = 'Guanabara'
+idade = 25
+peso = 75.8
+
+* Comando para interagir com o usuário *
+Exemplo:
+O comando input significa leia.
+Lembre-se todos os comandos em python é uma função!
+
+nome = input('Qual é o seu nome?')
+idade = input('Qual é a sua idade?')
+peso = input('Qual é o seu peso?')
+*** Aula 06 Tipos Primitivos e saídas de dados ***
+
+Tipos primitivos:
+
+Int
+Float
+Boolean
+String
+
+Comandos:
+
+s = 1 + 1
+
+print('A soma vale', s)
+
+print('A soma de () e () é ()').format(n1, n2, s)
+ type(variavel) mostra o tipo da variável
+
+ *** Aula 07 - Operadores Aritméticos ***
+
+ Operadores:
+ + adição
+ - subtração
+ * multiplicação
+ / divisão
+ ** Potência
+ // divisão inteira
+ % módulo ou resto da divisão
+
+ Exemplos:
+ 5 + 2 == 7
+ 5 - 2 == 3
+ 5 * 2 == 10
+ 5 / 2 == 2.5
+ 5 ** 2 == 25 a potenciação também pode ser feita assim: pow(5,2)
+ 5 // 2 == 2
+ 5 % 2 == 1
+ Obs: a função interna pow do Python faz a potencia perder a ordem de precedencia matemática
+ Obs1: Uma raiz quadrada pode ser realizada do seguinte modo: x ** 1/2
+
+Particularidades Python:
+> 'oi' * 5
+>> oioioioioi
+> = * 4
+>> ====
+
+ Ordem de precedência dos Operadores Aritméticos:
+
+1 ()
+2 **
+3 *, /, //, %
+4 +, -
+
+Exemplos matemáticos:
+5 + 3 * 2 == 11
+3 * 5 + 4 ** 2 == 31
+3 * ( 5 + 4 ) ** 2 = 243
+
+Exemplos aula:
+nome = input('Qual é o seu nome')
+print('Prazer em te conhecer {:>20}'.format(nome)) # o nome fica alinhado em 20 caracteres
+print('Prazer em te conhecer {:=^20}'.format(nome)) # output  ...==========nome========== ...
+
+
+Desafios:
+5) Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e seu antecessor
+6) Crie um algoritmo que leia um número e mostre seu dobro, triplo e raiz quadrada
+7) Desenvolva um programa que leia as duas notas de um aluno e calcule a sua média
+8) Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milimetros
+9) Faça um programa que leia um número inteiro qualquer e mostre na tela sua tabuada
+10) Crie um programa que leia quantos dinheiro uma pessoa tem na carteira e mostre na tela quantos doláres ela pode comprar
+Considere US$ 1,00 = 3,27
+11) Faça um programa que leia a largura e a altura de uma parede em metros, calcule sua área e a quantidade de tinta
+necessária para pintá-la, sabendo que cada litro de tinta pinta uma área de 2m²
+12)Faça um algoritmo que leia o preço de um produto e mostre seu novo preço com 5% de desconto
+13) Faça um algoritmo que leia o salário de um funcionário e mostre seu novo salário com 15% de aumento.
+
+*** Aula 08 - Utilizando Módulos ***
+
+Para importar uma biblioteca devo utilizar o comando import nomeDaBiblioteca (importa todas as funcionalidades da biblioteca).
+Obs: A importação fica nas primeiras linhas do código.
+Para importar somente algumas funcionalidades da biblioteca deve-se utilizar o comando:
+from nomeDaBiblioteca import funcionalidadeDaBiblioteca
+
+Exemplo:
+ceil arredonda para cima
+floor arredonda para baixa
+trunc tira a virgula do número
+pow potencia
+sqrt raiz quadrada
+factorial cálculo fatorial
+from math import ceil, floor, trunc, pow, sqrt, factorial
+
+*** Aula 08 - (Utilizando Módulos) ***
+
+Trabalhando com Módulos:
+
+Lembrar da compra de um carro: você pode comprar ele baśico (famoso pé de boi) ou um carro com vário opcionais.
+Ou depois de algum tempo que comprou um carro básico, podemos instalar módulos: Ex: ar condicionado, som, vidro elétrico e etc.
+
+O Python trabalha a partir  pacotes, ou seja, módulos. Eles podem ser instalados ou vir nativos com a linguagem.
+
+Sintaxe para importar bibliotecas em python:
+
+* import nomeBiblioteca (importa todas funcionalidades da biblioteca)
+Obs: a importação das bibliotecas são feitas nas primeiras linhas do código
+
+* from nomeBiblioteca import nomeFuncionalidade (importa somente a funcionalidade desejada da biblioteca)
+
+Exemplo:
+
+import math
+
+A biblioteca math possui a seguintes funcionalidades:
+ceil: arredondamento de nº float para cima
+floor: arredondamento de nº float para baixo
+trunc: vai eliminar número da vírgula para frente sem arredondamento
+pow: potência
+sqrt: raiz quadrada
+factorial: fatorial
+etc ...
+
+Exemplo: from math import sqrt, ceil (importou somente raiz quadrada e ceil da biblioteca math)
